@@ -8,8 +8,9 @@ if(!empty($_POST['id'])){
 	$id = addslashes($_POST['id']);
 
 	if(!empty($email)) {
-		$contato->editar($nome, $email, $id);
-	
+		
+		$contato->editar($nome, $email, $id);	
+
 	}
 	header("Location: index.php");
 
